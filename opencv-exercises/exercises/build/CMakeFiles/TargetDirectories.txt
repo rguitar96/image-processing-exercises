@@ -1,0 +1,4 @@
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles/exercise2a.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles/exercise2b.dir
