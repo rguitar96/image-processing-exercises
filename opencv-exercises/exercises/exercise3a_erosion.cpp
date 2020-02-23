@@ -7,7 +7,7 @@ int main(int argc, char** argv )
 {
     if (argc != 4)
     {
-        printf("usage: ./exercise2a <input_path> <threshold> <output_path>\n");
+        printf("usage: ./exercise3a_erosion <input_path> <i> <output_path>\n");
         return -1;
     }
 
@@ -25,6 +25,7 @@ int main(int argc, char** argv )
     Mat output_image;
 
     input_image = imread(argv[1], cv::IMREAD_GRAYSCALE);
+
     output_image = input_image.clone();
 
     if (!input_image.data)
@@ -32,12 +33,20 @@ int main(int argc, char** argv )
         printf("No image data \n");
         return -1;
     }
-
+    
     for (int i = 0; i < input_image.rows; i++)
     {
         for (int j = 0; j < input_image.cols; j++)
         {
-            output_image.at<uchar>(i,j) = (input_image.at<uchar>(i,j) > value) ? 255 : 0;
+            uchar max = 0;
+            for (int h = -value; h < value; h++)
+            {
+                for (int w = -value; w < value; w++)
+                {
+                    if (input_image.at<uchar>(i+h,j+w) > max) max = input_image.at<uchar>(i+h,j+w);
+                }
+            }
+            output_image.at<uchar>(i,j) = max;
         }
     }
 

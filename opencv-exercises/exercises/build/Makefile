@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exercise2b
+
+# Build rule for target.
+exercise2b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise2b
+.PHONY : exercise2b
+
+# fast build rule for target.
+exercise2b/fast:
+	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/build
+.PHONY : exercise2b/fast
+
+#=============================================================================
+# Target rules for targets named exercise3a_erosion
+
+# Build rule for target.
+exercise3a_erosion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise3a_erosion
+.PHONY : exercise3a_erosion
+
+# fast build rule for target.
+exercise3a_erosion/fast:
+	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/build
+.PHONY : exercise3a_erosion/fast
+
+#=============================================================================
 # Target rules for targets named exercise2a
 
 # Build rule for target.
@@ -124,17 +150,43 @@ exercise2a/fast:
 .PHONY : exercise2a/fast
 
 #=============================================================================
-# Target rules for targets named exercise2b
+# Target rules for targets named exercise2d_sup
 
 # Build rule for target.
-exercise2b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise2b
-.PHONY : exercise2b
+exercise2d_sup: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise2d_sup
+.PHONY : exercise2d_sup
 
 # fast build rule for target.
-exercise2b/fast:
-	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/build
-.PHONY : exercise2b/fast
+exercise2d_sup/fast:
+	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/build
+.PHONY : exercise2d_sup/fast
+
+#=============================================================================
+# Target rules for targets named exercise2d_inf
+
+# Build rule for target.
+exercise2d_inf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise2d_inf
+.PHONY : exercise2d_inf
+
+# fast build rule for target.
+exercise2d_inf/fast:
+	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/build
+.PHONY : exercise2d_inf/fast
+
+#=============================================================================
+# Target rules for targets named exercise3b_dilation
+
+# Build rule for target.
+exercise3b_dilation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise3b_dilation
+.PHONY : exercise3b_dilation
+
+# fast build rule for target.
+exercise3b_dilation/fast:
+	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/build
+.PHONY : exercise3b_dilation/fast
 
 exercise2a.o: exercise2a.cpp.o
 
@@ -190,6 +242,114 @@ exercise2b.cpp.s:
 	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/exercise2b.cpp.s
 .PHONY : exercise2b.cpp.s
 
+exercise2d_inf.o: exercise2d_inf.cpp.o
+
+.PHONY : exercise2d_inf.o
+
+# target to build an object file
+exercise2d_inf.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.o
+.PHONY : exercise2d_inf.cpp.o
+
+exercise2d_inf.i: exercise2d_inf.cpp.i
+
+.PHONY : exercise2d_inf.i
+
+# target to preprocess a source file
+exercise2d_inf.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.i
+.PHONY : exercise2d_inf.cpp.i
+
+exercise2d_inf.s: exercise2d_inf.cpp.s
+
+.PHONY : exercise2d_inf.s
+
+# target to generate assembly for a file
+exercise2d_inf.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.s
+.PHONY : exercise2d_inf.cpp.s
+
+exercise2d_sup.o: exercise2d_sup.cpp.o
+
+.PHONY : exercise2d_sup.o
+
+# target to build an object file
+exercise2d_sup.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.o
+.PHONY : exercise2d_sup.cpp.o
+
+exercise2d_sup.i: exercise2d_sup.cpp.i
+
+.PHONY : exercise2d_sup.i
+
+# target to preprocess a source file
+exercise2d_sup.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.i
+.PHONY : exercise2d_sup.cpp.i
+
+exercise2d_sup.s: exercise2d_sup.cpp.s
+
+.PHONY : exercise2d_sup.s
+
+# target to generate assembly for a file
+exercise2d_sup.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.s
+.PHONY : exercise2d_sup.cpp.s
+
+exercise3a_erosion.o: exercise3a_erosion.cpp.o
+
+.PHONY : exercise3a_erosion.o
+
+# target to build an object file
+exercise3a_erosion.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.o
+.PHONY : exercise3a_erosion.cpp.o
+
+exercise3a_erosion.i: exercise3a_erosion.cpp.i
+
+.PHONY : exercise3a_erosion.i
+
+# target to preprocess a source file
+exercise3a_erosion.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.i
+.PHONY : exercise3a_erosion.cpp.i
+
+exercise3a_erosion.s: exercise3a_erosion.cpp.s
+
+.PHONY : exercise3a_erosion.s
+
+# target to generate assembly for a file
+exercise3a_erosion.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.s
+.PHONY : exercise3a_erosion.cpp.s
+
+exercise3b_dilation.o: exercise3b_dilation.cpp.o
+
+.PHONY : exercise3b_dilation.o
+
+# target to build an object file
+exercise3b_dilation.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.o
+.PHONY : exercise3b_dilation.cpp.o
+
+exercise3b_dilation.i: exercise3b_dilation.cpp.i
+
+.PHONY : exercise3b_dilation.i
+
+# target to preprocess a source file
+exercise3b_dilation.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.i
+.PHONY : exercise3b_dilation.cpp.i
+
+exercise3b_dilation.s: exercise3b_dilation.cpp.s
+
+.PHONY : exercise3b_dilation.s
+
+# target to generate assembly for a file
+exercise3b_dilation.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.s
+.PHONY : exercise3b_dilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,15 +357,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... exercise2a"
 	@echo "... exercise2b"
+	@echo "... edit_cache"
+	@echo "... exercise3a_erosion"
+	@echo "... exercise2a"
+	@echo "... exercise2d_sup"
+	@echo "... exercise2d_inf"
+	@echo "... exercise3b_dilation"
 	@echo "... exercise2a.o"
 	@echo "... exercise2a.i"
 	@echo "... exercise2a.s"
 	@echo "... exercise2b.o"
 	@echo "... exercise2b.i"
 	@echo "... exercise2b.s"
+	@echo "... exercise2d_inf.o"
+	@echo "... exercise2d_inf.i"
+	@echo "... exercise2d_inf.s"
+	@echo "... exercise2d_sup.o"
+	@echo "... exercise2d_sup.i"
+	@echo "... exercise2d_sup.s"
+	@echo "... exercise3a_erosion.o"
+	@echo "... exercise3a_erosion.i"
+	@echo "... exercise3a_erosion.s"
+	@echo "... exercise3b_dilation.o"
+	@echo "... exercise3b_dilation.i"
+	@echo "... exercise3b_dilation.s"
 .PHONY : help
 
 

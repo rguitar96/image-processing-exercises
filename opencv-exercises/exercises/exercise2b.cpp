@@ -14,8 +14,8 @@ int main(int argc, char** argv )
     Mat first_image;
     Mat second_image;
 
-    first_image = imread( argv[1], 1 );
-    second_image = imread( argv[2], 1 );
+    first_image = imread(argv[1], cv::IMREAD_GRAYSCALE);
+    second_image = imread(argv[2], cv::IMREAD_GRAYSCALE);
 
     if (!first_image.data || !second_image.data)
     {
@@ -23,23 +23,29 @@ int main(int argc, char** argv )
         return -1;
     }
 
+    bool equal = true;
+
     if (first_image.size() != second_image.size())
     {
         printf("Images have different dimensions \n");
-        return -1;
+        equal = false;
     }
 
-    Scalar s = sum(first_image - second_image);
+    if (equal)
+    {
+        for (int i = 0; i < first_image.rows; i++)
+        {
+            for (int j = 0; j < first_image.cols; j++)
+            {
+                if (first_image.at<uchar>(i,j) != second_image.at<uchar>(i,j))
+                {
+                    equal = false;
+                }
+            }
+        }
+    }
 
-    if (s[0]==0 && s[1]==0 && s[2]==0)
-    {
-        printf("Images are the same! \n");
-    }
-    else
-    {
-        printf("Images are not the same :( \n");
-    }
+    equal ? printf("Images are equal!\n") : printf("Images are not equal!\n");
     
-
     return 0;
 }
