@@ -11,4 +11,12 @@ stdio.h
 -
 opencv2/opencv.hpp
 -
+libraries/ImageUtilities/image_utilities.hpp
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/libraries/ImageUtilities/image_utilities.hpp
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/libraries/ImageUtilities/image_utilities.hpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
 

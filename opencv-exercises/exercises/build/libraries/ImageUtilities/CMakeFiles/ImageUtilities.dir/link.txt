@@ -1,0 +1,2 @@
+/usr/bin/ar qc libImageUtilities.a  CMakeFiles/ImageUtilities.dir/image_utilities.cpp.o
+/usr/bin/ranlib libImageUtilities.a

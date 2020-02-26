@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/rodrigo/universidad/image-processing-exercises/opencv-e
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,244 +111,337 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exercise2b
+# Target rules for targets named exercise_02b_compare
 
 # Build rule for target.
-exercise2b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise2b
-.PHONY : exercise2b
+exercise_02b_compare: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_02b_compare
+.PHONY : exercise_02b_compare
 
 # fast build rule for target.
-exercise2b/fast:
-	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/build
-.PHONY : exercise2b/fast
+exercise_02b_compare/fast:
+	$(MAKE) -f CMakeFiles/exercise_02b_compare.dir/build.make CMakeFiles/exercise_02b_compare.dir/build
+.PHONY : exercise_02b_compare/fast
 
 #=============================================================================
-# Target rules for targets named exercise3a_erosion
+# Target rules for targets named exercise_04b_closing
 
 # Build rule for target.
-exercise3a_erosion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise3a_erosion
-.PHONY : exercise3a_erosion
+exercise_04b_closing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_04b_closing
+.PHONY : exercise_04b_closing
 
 # fast build rule for target.
-exercise3a_erosion/fast:
-	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/build
-.PHONY : exercise3a_erosion/fast
+exercise_04b_closing/fast:
+	$(MAKE) -f CMakeFiles/exercise_04b_closing.dir/build.make CMakeFiles/exercise_04b_closing.dir/build
+.PHONY : exercise_04b_closing/fast
 
 #=============================================================================
-# Target rules for targets named exercise2a
+# Target rules for targets named exercise_02a_thresh
 
 # Build rule for target.
-exercise2a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise2a
-.PHONY : exercise2a
+exercise_02a_thresh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_02a_thresh
+.PHONY : exercise_02a_thresh
 
 # fast build rule for target.
-exercise2a/fast:
-	$(MAKE) -f CMakeFiles/exercise2a.dir/build.make CMakeFiles/exercise2a.dir/build
-.PHONY : exercise2a/fast
+exercise_02a_thresh/fast:
+	$(MAKE) -f CMakeFiles/exercise_02a_thresh.dir/build.make CMakeFiles/exercise_02a_thresh.dir/build
+.PHONY : exercise_02a_thresh/fast
 
 #=============================================================================
-# Target rules for targets named exercise2d_sup
+# Target rules for targets named exercise_02d_sup
 
 # Build rule for target.
-exercise2d_sup: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise2d_sup
-.PHONY : exercise2d_sup
+exercise_02d_sup: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_02d_sup
+.PHONY : exercise_02d_sup
 
 # fast build rule for target.
-exercise2d_sup/fast:
-	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/build
-.PHONY : exercise2d_sup/fast
+exercise_02d_sup/fast:
+	$(MAKE) -f CMakeFiles/exercise_02d_sup.dir/build.make CMakeFiles/exercise_02d_sup.dir/build
+.PHONY : exercise_02d_sup/fast
 
 #=============================================================================
-# Target rules for targets named exercise2d_inf
+# Target rules for targets named exercise_02d_inf
 
 # Build rule for target.
-exercise2d_inf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise2d_inf
-.PHONY : exercise2d_inf
+exercise_02d_inf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_02d_inf
+.PHONY : exercise_02d_inf
 
 # fast build rule for target.
-exercise2d_inf/fast:
-	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/build
-.PHONY : exercise2d_inf/fast
+exercise_02d_inf/fast:
+	$(MAKE) -f CMakeFiles/exercise_02d_inf.dir/build.make CMakeFiles/exercise_02d_inf.dir/build
+.PHONY : exercise_02d_inf/fast
 
 #=============================================================================
-# Target rules for targets named exercise3b_dilation
+# Target rules for targets named exercise_03a_erosion
 
 # Build rule for target.
-exercise3b_dilation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise3b_dilation
-.PHONY : exercise3b_dilation
+exercise_03a_erosion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_03a_erosion
+.PHONY : exercise_03a_erosion
 
 # fast build rule for target.
-exercise3b_dilation/fast:
-	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/build
-.PHONY : exercise3b_dilation/fast
+exercise_03a_erosion/fast:
+	$(MAKE) -f CMakeFiles/exercise_03a_erosion.dir/build.make CMakeFiles/exercise_03a_erosion.dir/build
+.PHONY : exercise_03a_erosion/fast
 
-exercise2a.o: exercise2a.cpp.o
+#=============================================================================
+# Target rules for targets named exercise_04a_opening
 
-.PHONY : exercise2a.o
+# Build rule for target.
+exercise_04a_opening: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_04a_opening
+.PHONY : exercise_04a_opening
 
-# target to build an object file
-exercise2a.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise2a.dir/build.make CMakeFiles/exercise2a.dir/exercise2a.cpp.o
-.PHONY : exercise2a.cpp.o
+# fast build rule for target.
+exercise_04a_opening/fast:
+	$(MAKE) -f CMakeFiles/exercise_04a_opening.dir/build.make CMakeFiles/exercise_04a_opening.dir/build
+.PHONY : exercise_04a_opening/fast
 
-exercise2a.i: exercise2a.cpp.i
+#=============================================================================
+# Target rules for targets named exercise_03b_dilation
 
-.PHONY : exercise2a.i
+# Build rule for target.
+exercise_03b_dilation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_03b_dilation
+.PHONY : exercise_03b_dilation
 
-# target to preprocess a source file
-exercise2a.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise2a.dir/build.make CMakeFiles/exercise2a.dir/exercise2a.cpp.i
-.PHONY : exercise2a.cpp.i
+# fast build rule for target.
+exercise_03b_dilation/fast:
+	$(MAKE) -f CMakeFiles/exercise_03b_dilation.dir/build.make CMakeFiles/exercise_03b_dilation.dir/build
+.PHONY : exercise_03b_dilation/fast
 
-exercise2a.s: exercise2a.cpp.s
+#=============================================================================
+# Target rules for targets named ImageUtilities
 
-.PHONY : exercise2a.s
+# Build rule for target.
+ImageUtilities: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ImageUtilities
+.PHONY : ImageUtilities
 
-# target to generate assembly for a file
-exercise2a.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise2a.dir/build.make CMakeFiles/exercise2a.dir/exercise2a.cpp.s
-.PHONY : exercise2a.cpp.s
+# fast build rule for target.
+ImageUtilities/fast:
+	$(MAKE) -f libraries/ImageUtilities/CMakeFiles/ImageUtilities.dir/build.make libraries/ImageUtilities/CMakeFiles/ImageUtilities.dir/build
+.PHONY : ImageUtilities/fast
 
-exercise2b.o: exercise2b.cpp.o
+exercise_02a_thresh.o: exercise_02a_thresh.cpp.o
 
-.PHONY : exercise2b.o
-
-# target to build an object file
-exercise2b.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/exercise2b.cpp.o
-.PHONY : exercise2b.cpp.o
-
-exercise2b.i: exercise2b.cpp.i
-
-.PHONY : exercise2b.i
-
-# target to preprocess a source file
-exercise2b.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/exercise2b.cpp.i
-.PHONY : exercise2b.cpp.i
-
-exercise2b.s: exercise2b.cpp.s
-
-.PHONY : exercise2b.s
-
-# target to generate assembly for a file
-exercise2b.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise2b.dir/build.make CMakeFiles/exercise2b.dir/exercise2b.cpp.s
-.PHONY : exercise2b.cpp.s
-
-exercise2d_inf.o: exercise2d_inf.cpp.o
-
-.PHONY : exercise2d_inf.o
+.PHONY : exercise_02a_thresh.o
 
 # target to build an object file
-exercise2d_inf.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.o
-.PHONY : exercise2d_inf.cpp.o
+exercise_02a_thresh.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_02a_thresh.dir/build.make CMakeFiles/exercise_02a_thresh.dir/exercise_02a_thresh.cpp.o
+.PHONY : exercise_02a_thresh.cpp.o
 
-exercise2d_inf.i: exercise2d_inf.cpp.i
+exercise_02a_thresh.i: exercise_02a_thresh.cpp.i
 
-.PHONY : exercise2d_inf.i
+.PHONY : exercise_02a_thresh.i
 
 # target to preprocess a source file
-exercise2d_inf.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.i
-.PHONY : exercise2d_inf.cpp.i
+exercise_02a_thresh.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_02a_thresh.dir/build.make CMakeFiles/exercise_02a_thresh.dir/exercise_02a_thresh.cpp.i
+.PHONY : exercise_02a_thresh.cpp.i
 
-exercise2d_inf.s: exercise2d_inf.cpp.s
+exercise_02a_thresh.s: exercise_02a_thresh.cpp.s
 
-.PHONY : exercise2d_inf.s
+.PHONY : exercise_02a_thresh.s
 
 # target to generate assembly for a file
-exercise2d_inf.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise2d_inf.dir/build.make CMakeFiles/exercise2d_inf.dir/exercise2d_inf.cpp.s
-.PHONY : exercise2d_inf.cpp.s
+exercise_02a_thresh.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_02a_thresh.dir/build.make CMakeFiles/exercise_02a_thresh.dir/exercise_02a_thresh.cpp.s
+.PHONY : exercise_02a_thresh.cpp.s
 
-exercise2d_sup.o: exercise2d_sup.cpp.o
+exercise_02b_compare.o: exercise_02b_compare.cpp.o
 
-.PHONY : exercise2d_sup.o
+.PHONY : exercise_02b_compare.o
 
 # target to build an object file
-exercise2d_sup.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.o
-.PHONY : exercise2d_sup.cpp.o
+exercise_02b_compare.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_02b_compare.dir/build.make CMakeFiles/exercise_02b_compare.dir/exercise_02b_compare.cpp.o
+.PHONY : exercise_02b_compare.cpp.o
 
-exercise2d_sup.i: exercise2d_sup.cpp.i
+exercise_02b_compare.i: exercise_02b_compare.cpp.i
 
-.PHONY : exercise2d_sup.i
+.PHONY : exercise_02b_compare.i
 
 # target to preprocess a source file
-exercise2d_sup.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.i
-.PHONY : exercise2d_sup.cpp.i
+exercise_02b_compare.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_02b_compare.dir/build.make CMakeFiles/exercise_02b_compare.dir/exercise_02b_compare.cpp.i
+.PHONY : exercise_02b_compare.cpp.i
 
-exercise2d_sup.s: exercise2d_sup.cpp.s
+exercise_02b_compare.s: exercise_02b_compare.cpp.s
 
-.PHONY : exercise2d_sup.s
+.PHONY : exercise_02b_compare.s
 
 # target to generate assembly for a file
-exercise2d_sup.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise2d_sup.dir/build.make CMakeFiles/exercise2d_sup.dir/exercise2d_sup.cpp.s
-.PHONY : exercise2d_sup.cpp.s
+exercise_02b_compare.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_02b_compare.dir/build.make CMakeFiles/exercise_02b_compare.dir/exercise_02b_compare.cpp.s
+.PHONY : exercise_02b_compare.cpp.s
 
-exercise3a_erosion.o: exercise3a_erosion.cpp.o
+exercise_02d_inf.o: exercise_02d_inf.cpp.o
 
-.PHONY : exercise3a_erosion.o
+.PHONY : exercise_02d_inf.o
 
 # target to build an object file
-exercise3a_erosion.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.o
-.PHONY : exercise3a_erosion.cpp.o
+exercise_02d_inf.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_02d_inf.dir/build.make CMakeFiles/exercise_02d_inf.dir/exercise_02d_inf.cpp.o
+.PHONY : exercise_02d_inf.cpp.o
 
-exercise3a_erosion.i: exercise3a_erosion.cpp.i
+exercise_02d_inf.i: exercise_02d_inf.cpp.i
 
-.PHONY : exercise3a_erosion.i
+.PHONY : exercise_02d_inf.i
 
 # target to preprocess a source file
-exercise3a_erosion.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.i
-.PHONY : exercise3a_erosion.cpp.i
+exercise_02d_inf.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_02d_inf.dir/build.make CMakeFiles/exercise_02d_inf.dir/exercise_02d_inf.cpp.i
+.PHONY : exercise_02d_inf.cpp.i
 
-exercise3a_erosion.s: exercise3a_erosion.cpp.s
+exercise_02d_inf.s: exercise_02d_inf.cpp.s
 
-.PHONY : exercise3a_erosion.s
+.PHONY : exercise_02d_inf.s
 
 # target to generate assembly for a file
-exercise3a_erosion.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise3a_erosion.dir/build.make CMakeFiles/exercise3a_erosion.dir/exercise3a_erosion.cpp.s
-.PHONY : exercise3a_erosion.cpp.s
+exercise_02d_inf.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_02d_inf.dir/build.make CMakeFiles/exercise_02d_inf.dir/exercise_02d_inf.cpp.s
+.PHONY : exercise_02d_inf.cpp.s
 
-exercise3b_dilation.o: exercise3b_dilation.cpp.o
+exercise_02d_sup.o: exercise_02d_sup.cpp.o
 
-.PHONY : exercise3b_dilation.o
+.PHONY : exercise_02d_sup.o
 
 # target to build an object file
-exercise3b_dilation.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.o
-.PHONY : exercise3b_dilation.cpp.o
+exercise_02d_sup.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_02d_sup.dir/build.make CMakeFiles/exercise_02d_sup.dir/exercise_02d_sup.cpp.o
+.PHONY : exercise_02d_sup.cpp.o
 
-exercise3b_dilation.i: exercise3b_dilation.cpp.i
+exercise_02d_sup.i: exercise_02d_sup.cpp.i
 
-.PHONY : exercise3b_dilation.i
+.PHONY : exercise_02d_sup.i
 
 # target to preprocess a source file
-exercise3b_dilation.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.i
-.PHONY : exercise3b_dilation.cpp.i
+exercise_02d_sup.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_02d_sup.dir/build.make CMakeFiles/exercise_02d_sup.dir/exercise_02d_sup.cpp.i
+.PHONY : exercise_02d_sup.cpp.i
 
-exercise3b_dilation.s: exercise3b_dilation.cpp.s
+exercise_02d_sup.s: exercise_02d_sup.cpp.s
 
-.PHONY : exercise3b_dilation.s
+.PHONY : exercise_02d_sup.s
 
 # target to generate assembly for a file
-exercise3b_dilation.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise3b_dilation.dir/build.make CMakeFiles/exercise3b_dilation.dir/exercise3b_dilation.cpp.s
-.PHONY : exercise3b_dilation.cpp.s
+exercise_02d_sup.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_02d_sup.dir/build.make CMakeFiles/exercise_02d_sup.dir/exercise_02d_sup.cpp.s
+.PHONY : exercise_02d_sup.cpp.s
+
+exercise_03a_erosion.o: exercise_03a_erosion.cpp.o
+
+.PHONY : exercise_03a_erosion.o
+
+# target to build an object file
+exercise_03a_erosion.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_03a_erosion.dir/build.make CMakeFiles/exercise_03a_erosion.dir/exercise_03a_erosion.cpp.o
+.PHONY : exercise_03a_erosion.cpp.o
+
+exercise_03a_erosion.i: exercise_03a_erosion.cpp.i
+
+.PHONY : exercise_03a_erosion.i
+
+# target to preprocess a source file
+exercise_03a_erosion.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_03a_erosion.dir/build.make CMakeFiles/exercise_03a_erosion.dir/exercise_03a_erosion.cpp.i
+.PHONY : exercise_03a_erosion.cpp.i
+
+exercise_03a_erosion.s: exercise_03a_erosion.cpp.s
+
+.PHONY : exercise_03a_erosion.s
+
+# target to generate assembly for a file
+exercise_03a_erosion.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_03a_erosion.dir/build.make CMakeFiles/exercise_03a_erosion.dir/exercise_03a_erosion.cpp.s
+.PHONY : exercise_03a_erosion.cpp.s
+
+exercise_03b_dilation.o: exercise_03b_dilation.cpp.o
+
+.PHONY : exercise_03b_dilation.o
+
+# target to build an object file
+exercise_03b_dilation.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_03b_dilation.dir/build.make CMakeFiles/exercise_03b_dilation.dir/exercise_03b_dilation.cpp.o
+.PHONY : exercise_03b_dilation.cpp.o
+
+exercise_03b_dilation.i: exercise_03b_dilation.cpp.i
+
+.PHONY : exercise_03b_dilation.i
+
+# target to preprocess a source file
+exercise_03b_dilation.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_03b_dilation.dir/build.make CMakeFiles/exercise_03b_dilation.dir/exercise_03b_dilation.cpp.i
+.PHONY : exercise_03b_dilation.cpp.i
+
+exercise_03b_dilation.s: exercise_03b_dilation.cpp.s
+
+.PHONY : exercise_03b_dilation.s
+
+# target to generate assembly for a file
+exercise_03b_dilation.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_03b_dilation.dir/build.make CMakeFiles/exercise_03b_dilation.dir/exercise_03b_dilation.cpp.s
+.PHONY : exercise_03b_dilation.cpp.s
+
+exercise_04a_opening.o: exercise_04a_opening.cpp.o
+
+.PHONY : exercise_04a_opening.o
+
+# target to build an object file
+exercise_04a_opening.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_04a_opening.dir/build.make CMakeFiles/exercise_04a_opening.dir/exercise_04a_opening.cpp.o
+.PHONY : exercise_04a_opening.cpp.o
+
+exercise_04a_opening.i: exercise_04a_opening.cpp.i
+
+.PHONY : exercise_04a_opening.i
+
+# target to preprocess a source file
+exercise_04a_opening.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_04a_opening.dir/build.make CMakeFiles/exercise_04a_opening.dir/exercise_04a_opening.cpp.i
+.PHONY : exercise_04a_opening.cpp.i
+
+exercise_04a_opening.s: exercise_04a_opening.cpp.s
+
+.PHONY : exercise_04a_opening.s
+
+# target to generate assembly for a file
+exercise_04a_opening.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_04a_opening.dir/build.make CMakeFiles/exercise_04a_opening.dir/exercise_04a_opening.cpp.s
+.PHONY : exercise_04a_opening.cpp.s
+
+exercise_04b_closing.o: exercise_04b_closing.cpp.o
+
+.PHONY : exercise_04b_closing.o
+
+# target to build an object file
+exercise_04b_closing.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_04b_closing.dir/build.make CMakeFiles/exercise_04b_closing.dir/exercise_04b_closing.cpp.o
+.PHONY : exercise_04b_closing.cpp.o
+
+exercise_04b_closing.i: exercise_04b_closing.cpp.i
+
+.PHONY : exercise_04b_closing.i
+
+# target to preprocess a source file
+exercise_04b_closing.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_04b_closing.dir/build.make CMakeFiles/exercise_04b_closing.dir/exercise_04b_closing.cpp.i
+.PHONY : exercise_04b_closing.cpp.i
+
+exercise_04b_closing.s: exercise_04b_closing.cpp.s
+
+.PHONY : exercise_04b_closing.s
+
+# target to generate assembly for a file
+exercise_04b_closing.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_04b_closing.dir/build.make CMakeFiles/exercise_04b_closing.dir/exercise_04b_closing.cpp.s
+.PHONY : exercise_04b_closing.cpp.s
 
 # Help Target
 help:
@@ -356,32 +449,41 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... exercise2b"
 	@echo "... edit_cache"
-	@echo "... exercise3a_erosion"
-	@echo "... exercise2a"
-	@echo "... exercise2d_sup"
-	@echo "... exercise2d_inf"
-	@echo "... exercise3b_dilation"
-	@echo "... exercise2a.o"
-	@echo "... exercise2a.i"
-	@echo "... exercise2a.s"
-	@echo "... exercise2b.o"
-	@echo "... exercise2b.i"
-	@echo "... exercise2b.s"
-	@echo "... exercise2d_inf.o"
-	@echo "... exercise2d_inf.i"
-	@echo "... exercise2d_inf.s"
-	@echo "... exercise2d_sup.o"
-	@echo "... exercise2d_sup.i"
-	@echo "... exercise2d_sup.s"
-	@echo "... exercise3a_erosion.o"
-	@echo "... exercise3a_erosion.i"
-	@echo "... exercise3a_erosion.s"
-	@echo "... exercise3b_dilation.o"
-	@echo "... exercise3b_dilation.i"
-	@echo "... exercise3b_dilation.s"
+	@echo "... exercise_02b_compare"
+	@echo "... exercise_04b_closing"
+	@echo "... exercise_02a_thresh"
+	@echo "... exercise_02d_sup"
+	@echo "... exercise_02d_inf"
+	@echo "... exercise_03a_erosion"
+	@echo "... rebuild_cache"
+	@echo "... exercise_04a_opening"
+	@echo "... exercise_03b_dilation"
+	@echo "... ImageUtilities"
+	@echo "... exercise_02a_thresh.o"
+	@echo "... exercise_02a_thresh.i"
+	@echo "... exercise_02a_thresh.s"
+	@echo "... exercise_02b_compare.o"
+	@echo "... exercise_02b_compare.i"
+	@echo "... exercise_02b_compare.s"
+	@echo "... exercise_02d_inf.o"
+	@echo "... exercise_02d_inf.i"
+	@echo "... exercise_02d_inf.s"
+	@echo "... exercise_02d_sup.o"
+	@echo "... exercise_02d_sup.i"
+	@echo "... exercise_02d_sup.s"
+	@echo "... exercise_03a_erosion.o"
+	@echo "... exercise_03a_erosion.i"
+	@echo "... exercise_03a_erosion.s"
+	@echo "... exercise_03b_dilation.o"
+	@echo "... exercise_03b_dilation.i"
+	@echo "... exercise_03b_dilation.s"
+	@echo "... exercise_04a_opening.o"
+	@echo "... exercise_04a_opening.i"
+	@echo "... exercise_04a_opening.s"
+	@echo "... exercise_04b_closing.o"
+	@echo "... exercise_04b_closing.i"
+	@echo "... exercise_04b_closing.s"
 .PHONY : help
 
 

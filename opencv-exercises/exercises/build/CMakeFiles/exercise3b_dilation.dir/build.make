@@ -116,6 +116,7 @@ exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+exercise3b_dilation: libraries/ImageUtilities/libImageUtilities.a
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
 exercise3b_dilation: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0

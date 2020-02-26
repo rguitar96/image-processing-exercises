@@ -15,6 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/libraries/ImageUtilities/CMakeFiles/ImageUtilities.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

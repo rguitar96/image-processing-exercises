@@ -116,6 +116,7 @@ exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+exercise2d_inf: libraries/ImageUtilities/libImageUtilities.a
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
 exercise2d_inf: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
