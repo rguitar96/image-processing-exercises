@@ -50,11 +50,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/exercise_06a_closing_opening.dir/DependInfo.cmake"
   "CMakeFiles/exercise_02b_compare.dir/DependInfo.cmake"
   "CMakeFiles/exercise_04b_closing.dir/DependInfo.cmake"
   "CMakeFiles/exercise_02a_thresh.dir/DependInfo.cmake"
   "CMakeFiles/exercise_02d_sup.dir/DependInfo.cmake"
   "CMakeFiles/exercise_02d_inf.dir/DependInfo.cmake"
+  "CMakeFiles/exercise_06b_opening_closing.dir/DependInfo.cmake"
   "CMakeFiles/exercise_03a_erosion.dir/DependInfo.cmake"
   "CMakeFiles/exercise_04a_opening.dir/DependInfo.cmake"
   "CMakeFiles/exercise_03b_dilation.dir/DependInfo.cmake"

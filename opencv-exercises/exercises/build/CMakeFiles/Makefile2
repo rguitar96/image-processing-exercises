@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/rodrigo/universidad/image-processing-exercises/opencv-e
 CMAKE_BINARY_DIR = /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/exercise_06a_closing_opening.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_06a_closing_opening.dir/all: libraries/ImageUtilities/CMakeFiles/ImageUtilities.dir/all
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/depend
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles --progress-num=19,20 "Built target exercise_06a_closing_opening"
+.PHONY : CMakeFiles/exercise_06a_closing_opening.dir/all
+
+# Include target in all.
+all: CMakeFiles/exercise_06a_closing_opening.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_06a_closing_opening.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_06a_closing_opening.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_06a_closing_opening.dir/rule
+
+# Convenience name for target.
+exercise_06a_closing_opening: CMakeFiles/exercise_06a_closing_opening.dir/rule
+
+.PHONY : exercise_06a_closing_opening
+
+# clean rule for target.
+CMakeFiles/exercise_06a_closing_opening.dir/clean:
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/clean
+.PHONY : CMakeFiles/exercise_06a_closing_opening.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/exercise_06a_closing_opening.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/exercise_02b_compare.dir
 
 # All Build rule for target.
@@ -241,6 +278,43 @@ CMakeFiles/exercise_02d_inf.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/exercise_02d_inf.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exercise_06b_opening_closing.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_06b_opening_closing.dir/all: libraries/ImageUtilities/CMakeFiles/ImageUtilities.dir/all
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/depend
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles --progress-num=21,22 "Built target exercise_06b_opening_closing"
+.PHONY : CMakeFiles/exercise_06b_opening_closing.dir/all
+
+# Include target in all.
+all: CMakeFiles/exercise_06b_opening_closing.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_06b_opening_closing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_06b_opening_closing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_06b_opening_closing.dir/rule
+
+# Convenience name for target.
+exercise_06b_opening_closing: CMakeFiles/exercise_06b_opening_closing.dir/rule
+
+.PHONY : exercise_06b_opening_closing
+
+# clean rule for target.
+CMakeFiles/exercise_06b_opening_closing.dir/clean:
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/clean
+.PHONY : CMakeFiles/exercise_06b_opening_closing.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/exercise_06b_opening_closing.dir/clean
 
 .PHONY : clean
 

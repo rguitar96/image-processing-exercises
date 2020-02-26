@@ -8,7 +8,7 @@ int main(int argc, char** argv )
 {
     if (argc != 3)
     {
-        printf("usage: ./exercise2b <first_image_path> <second_image_path>\n");
+        printf("usage: ./exercise_02b_compare <first_image_path> <second_image_path>\n");
         return -1;
     }
 

@@ -73,7 +73,7 @@ cv::Mat compute_supremum(cv::Mat first_image, cv::Mat second_image)
     return output_image;
 }
 
-cv::Mat compute_erosion(cv::Mat input_image, int value, int max_value=255)
+cv::Mat compute_erosion(cv::Mat input_image, int value, float max_value=255)
 {
     cv::Mat output_image = input_image.clone();
 
@@ -99,7 +99,7 @@ cv::Mat compute_erosion(cv::Mat input_image, int value, int max_value=255)
     return output_image;
 }
 
-cv::Mat compute_dilation(cv::Mat input_image, int value, int min_value=0)
+cv::Mat compute_dilation(cv::Mat input_image, int value, float min_value=0)
 {
     cv::Mat output_image = input_image.clone();
 
@@ -125,7 +125,7 @@ cv::Mat compute_dilation(cv::Mat input_image, int value, int min_value=0)
     return output_image;
 }
 
-cv::Mat compute_opening(cv::Mat input_image, int value, int min_value=0, int max_value = 0)
+cv::Mat compute_opening(cv::Mat input_image, int value, float min_value=0, float max_value=255)
 {
     cv::Mat output_image = input_image.clone();
 
@@ -135,7 +135,7 @@ cv::Mat compute_opening(cv::Mat input_image, int value, int min_value=0, int max
     return output_image;
 }
 
-cv::Mat compute_closing(cv::Mat input_image, int value, int min_value=0, int max_value = 0)
+cv::Mat compute_closing(cv::Mat input_image, int value, float min_value=0, float max_value=255)
 {
     cv::Mat output_image = input_image.clone();
 

@@ -6,7 +6,7 @@ int main(int argc, char** argv )
 {
     if (argc != 4)
     {
-        printf("usage: ./exercise3a_erosion <i> <input_path> <output_path>\n");
+        printf("usage: ./exercise_03a_erosion <i> <input_path> <output_path>\n");
         return -1;
     }
 

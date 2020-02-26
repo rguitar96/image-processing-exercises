@@ -6,7 +6,7 @@ int main(int argc, char** argv )
 {
     if (argc != 4)
     {
-        printf("usage: ./exercise2d_inf <first_image_path> <second_image_path> <output_path>\n");
+        printf("usage: ./exercise_02d_inf <first_image_path> <second_image_path> <output_path>\n");
         return -1;
     }
 

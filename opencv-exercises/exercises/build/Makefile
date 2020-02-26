@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exercise_06a_closing_opening
+
+# Build rule for target.
+exercise_06a_closing_opening: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_06a_closing_opening
+.PHONY : exercise_06a_closing_opening
+
+# fast build rule for target.
+exercise_06a_closing_opening/fast:
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/build
+.PHONY : exercise_06a_closing_opening/fast
+
+#=============================================================================
 # Target rules for targets named exercise_02b_compare
 
 # Build rule for target.
@@ -174,6 +187,19 @@ exercise_02d_inf: cmake_check_build_system
 exercise_02d_inf/fast:
 	$(MAKE) -f CMakeFiles/exercise_02d_inf.dir/build.make CMakeFiles/exercise_02d_inf.dir/build
 .PHONY : exercise_02d_inf/fast
+
+#=============================================================================
+# Target rules for targets named exercise_06b_opening_closing
+
+# Build rule for target.
+exercise_06b_opening_closing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_06b_opening_closing
+.PHONY : exercise_06b_opening_closing
+
+# fast build rule for target.
+exercise_06b_opening_closing/fast:
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/build
+.PHONY : exercise_06b_opening_closing/fast
 
 #=============================================================================
 # Target rules for targets named exercise_03a_erosion
@@ -443,6 +469,60 @@ exercise_04b_closing.cpp.s:
 	$(MAKE) -f CMakeFiles/exercise_04b_closing.dir/build.make CMakeFiles/exercise_04b_closing.dir/exercise_04b_closing.cpp.s
 .PHONY : exercise_04b_closing.cpp.s
 
+exercise_06a_closing_opening.o: exercise_06a_closing_opening.cpp.o
+
+.PHONY : exercise_06a_closing_opening.o
+
+# target to build an object file
+exercise_06a_closing_opening.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/exercise_06a_closing_opening.cpp.o
+.PHONY : exercise_06a_closing_opening.cpp.o
+
+exercise_06a_closing_opening.i: exercise_06a_closing_opening.cpp.i
+
+.PHONY : exercise_06a_closing_opening.i
+
+# target to preprocess a source file
+exercise_06a_closing_opening.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/exercise_06a_closing_opening.cpp.i
+.PHONY : exercise_06a_closing_opening.cpp.i
+
+exercise_06a_closing_opening.s: exercise_06a_closing_opening.cpp.s
+
+.PHONY : exercise_06a_closing_opening.s
+
+# target to generate assembly for a file
+exercise_06a_closing_opening.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_06a_closing_opening.dir/build.make CMakeFiles/exercise_06a_closing_opening.dir/exercise_06a_closing_opening.cpp.s
+.PHONY : exercise_06a_closing_opening.cpp.s
+
+exercise_06b_opening_closing.o: exercise_06b_opening_closing.cpp.o
+
+.PHONY : exercise_06b_opening_closing.o
+
+# target to build an object file
+exercise_06b_opening_closing.cpp.o:
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/exercise_06b_opening_closing.cpp.o
+.PHONY : exercise_06b_opening_closing.cpp.o
+
+exercise_06b_opening_closing.i: exercise_06b_opening_closing.cpp.i
+
+.PHONY : exercise_06b_opening_closing.i
+
+# target to preprocess a source file
+exercise_06b_opening_closing.cpp.i:
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/exercise_06b_opening_closing.cpp.i
+.PHONY : exercise_06b_opening_closing.cpp.i
+
+exercise_06b_opening_closing.s: exercise_06b_opening_closing.cpp.s
+
+.PHONY : exercise_06b_opening_closing.s
+
+# target to generate assembly for a file
+exercise_06b_opening_closing.cpp.s:
+	$(MAKE) -f CMakeFiles/exercise_06b_opening_closing.dir/build.make CMakeFiles/exercise_06b_opening_closing.dir/exercise_06b_opening_closing.cpp.s
+.PHONY : exercise_06b_opening_closing.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -450,11 +530,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... exercise_06a_closing_opening"
 	@echo "... exercise_02b_compare"
 	@echo "... exercise_04b_closing"
 	@echo "... exercise_02a_thresh"
 	@echo "... exercise_02d_sup"
 	@echo "... exercise_02d_inf"
+	@echo "... exercise_06b_opening_closing"
 	@echo "... exercise_03a_erosion"
 	@echo "... rebuild_cache"
 	@echo "... exercise_04a_opening"
@@ -484,6 +566,12 @@ help:
 	@echo "... exercise_04b_closing.o"
 	@echo "... exercise_04b_closing.i"
 	@echo "... exercise_04b_closing.s"
+	@echo "... exercise_06a_closing_opening.o"
+	@echo "... exercise_06a_closing_opening.i"
+	@echo "... exercise_06a_closing_opening.s"
+	@echo "... exercise_06b_opening_closing.o"
+	@echo "... exercise_06b_opening_closing.i"
+	@echo "... exercise_06b_opening_closing.s"
 .PHONY : help
 
 
