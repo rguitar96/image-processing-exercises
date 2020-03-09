@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-0x/exercise_02a_thresh.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+libraries/ImageUtilities/image_utilities.hpp
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-0x/libraries/ImageUtilities/image_utilities.hpp
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-0x/libraries/ImageUtilities/image_utilities.hpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+
