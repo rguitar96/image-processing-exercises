@@ -1,9 +1,10 @@
 <h2>
 Dependencies:
-</h2>
-⋅⋅* C++ 11+
-⋅⋅* CMake 2.8+
-⋅⋅* OpenCV 3.2+
+</h2>  
+
+* C++ 11+
+* CMake 2.8+
+* OpenCV 3.2+
 
 <h2>
 Compile project:
