@@ -60,113 +60,39 @@ CMAKE_SOURCE_DIR = /home/rodrigo/universidad/image-processing-exercises/opencv-e
 CMAKE_BINARY_DIR = /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/exercise_01b_grassfire.dir
+# Target rules for target CMakeFiles/exercise_01d_watershed.dir
 
 # All Build rule for target.
-CMakeFiles/exercise_01b_grassfire.dir/all:
-	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/depend
-	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=3,4 "Built target exercise_01b_grassfire"
-.PHONY : CMakeFiles/exercise_01b_grassfire.dir/all
+CMakeFiles/exercise_01d_watershed.dir/all:
+	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/depend
+	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=7,8 "Built target exercise_01d_watershed"
+.PHONY : CMakeFiles/exercise_01d_watershed.dir/all
 
 # Include target in all.
-all: CMakeFiles/exercise_01b_grassfire.dir/all
+all: CMakeFiles/exercise_01d_watershed.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exercise_01b_grassfire.dir/rule: cmake_check_build_system
+CMakeFiles/exercise_01d_watershed.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01b_grassfire.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01d_watershed.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 0
-.PHONY : CMakeFiles/exercise_01b_grassfire.dir/rule
+.PHONY : CMakeFiles/exercise_01d_watershed.dir/rule
 
 # Convenience name for target.
-exercise_01b_grassfire: CMakeFiles/exercise_01b_grassfire.dir/rule
+exercise_01d_watershed: CMakeFiles/exercise_01d_watershed.dir/rule
 
-.PHONY : exercise_01b_grassfire
-
-# clean rule for target.
-CMakeFiles/exercise_01b_grassfire.dir/clean:
-	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/clean
-.PHONY : CMakeFiles/exercise_01b_grassfire.dir/clean
+.PHONY : exercise_01d_watershed
 
 # clean rule for target.
-clean: CMakeFiles/exercise_01b_grassfire.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/exercise_01a_boundary.dir
-
-# All Build rule for target.
-CMakeFiles/exercise_01a_boundary.dir/all:
-	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/depend
-	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=1,2 "Built target exercise_01a_boundary"
-.PHONY : CMakeFiles/exercise_01a_boundary.dir/all
-
-# Include target in all.
-all: CMakeFiles/exercise_01a_boundary.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/exercise_01a_boundary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01a_boundary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 0
-.PHONY : CMakeFiles/exercise_01a_boundary.dir/rule
-
-# Convenience name for target.
-exercise_01a_boundary: CMakeFiles/exercise_01a_boundary.dir/rule
-
-.PHONY : exercise_01a_boundary
+CMakeFiles/exercise_01d_watershed.dir/clean:
+	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/clean
+.PHONY : CMakeFiles/exercise_01d_watershed.dir/clean
 
 # clean rule for target.
-CMakeFiles/exercise_01a_boundary.dir/clean:
-	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/clean
-.PHONY : CMakeFiles/exercise_01a_boundary.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/exercise_01a_boundary.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/exercise_basic_watershed.dir
-
-# All Build rule for target.
-CMakeFiles/exercise_basic_watershed.dir/all:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/depend
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=9,10 "Built target exercise_basic_watershed"
-.PHONY : CMakeFiles/exercise_basic_watershed.dir/all
-
-# Include target in all.
-all: CMakeFiles/exercise_basic_watershed.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/exercise_basic_watershed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_basic_watershed.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 0
-.PHONY : CMakeFiles/exercise_basic_watershed.dir/rule
-
-# Convenience name for target.
-exercise_basic_watershed: CMakeFiles/exercise_basic_watershed.dir/rule
-
-.PHONY : exercise_basic_watershed
-
-# clean rule for target.
-CMakeFiles/exercise_basic_watershed.dir/clean:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/clean
-.PHONY : CMakeFiles/exercise_basic_watershed.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/exercise_basic_watershed.dir/clean
+clean: CMakeFiles/exercise_01d_watershed.dir/clean
 
 .PHONY : clean
 
@@ -208,39 +134,76 @@ clean: CMakeFiles/exercise_01c_wheel.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/exercise_01d_watershed.dir
+# Target rules for target CMakeFiles/exercise_01a_boundary.dir
 
 # All Build rule for target.
-CMakeFiles/exercise_01d_watershed.dir/all:
-	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/depend
-	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=7,8 "Built target exercise_01d_watershed"
-.PHONY : CMakeFiles/exercise_01d_watershed.dir/all
+CMakeFiles/exercise_01a_boundary.dir/all:
+	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/depend
+	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=1,2 "Built target exercise_01a_boundary"
+.PHONY : CMakeFiles/exercise_01a_boundary.dir/all
 
 # Include target in all.
-all: CMakeFiles/exercise_01d_watershed.dir/all
+all: CMakeFiles/exercise_01a_boundary.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exercise_01d_watershed.dir/rule: cmake_check_build_system
+CMakeFiles/exercise_01a_boundary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01d_watershed.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01a_boundary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 0
-.PHONY : CMakeFiles/exercise_01d_watershed.dir/rule
+.PHONY : CMakeFiles/exercise_01a_boundary.dir/rule
 
 # Convenience name for target.
-exercise_01d_watershed: CMakeFiles/exercise_01d_watershed.dir/rule
+exercise_01a_boundary: CMakeFiles/exercise_01a_boundary.dir/rule
 
-.PHONY : exercise_01d_watershed
-
-# clean rule for target.
-CMakeFiles/exercise_01d_watershed.dir/clean:
-	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/clean
-.PHONY : CMakeFiles/exercise_01d_watershed.dir/clean
+.PHONY : exercise_01a_boundary
 
 # clean rule for target.
-clean: CMakeFiles/exercise_01d_watershed.dir/clean
+CMakeFiles/exercise_01a_boundary.dir/clean:
+	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/clean
+.PHONY : CMakeFiles/exercise_01a_boundary.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/exercise_01a_boundary.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exercise_01b_grassfire.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_01b_grassfire.dir/all:
+	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/depend
+	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles --progress-num=3,4 "Built target exercise_01b_grassfire"
+.PHONY : CMakeFiles/exercise_01b_grassfire.dir/all
+
+# Include target in all.
+all: CMakeFiles/exercise_01b_grassfire.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_01b_grassfire.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01b_grassfire.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_01b_grassfire.dir/rule
+
+# Convenience name for target.
+exercise_01b_grassfire: CMakeFiles/exercise_01b_grassfire.dir/rule
+
+.PHONY : exercise_01b_grassfire
+
+# clean rule for target.
+CMakeFiles/exercise_01b_grassfire.dir/clean:
+	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/clean
+.PHONY : CMakeFiles/exercise_01b_grassfire.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/exercise_01b_grassfire.dir/clean
 
 .PHONY : clean
 

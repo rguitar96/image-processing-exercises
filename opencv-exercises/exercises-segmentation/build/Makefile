@@ -111,43 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exercise_01b_grassfire
+# Target rules for targets named exercise_01d_watershed
 
 # Build rule for target.
-exercise_01b_grassfire: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise_01b_grassfire
-.PHONY : exercise_01b_grassfire
+exercise_01d_watershed: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_01d_watershed
+.PHONY : exercise_01d_watershed
 
 # fast build rule for target.
-exercise_01b_grassfire/fast:
-	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/build
-.PHONY : exercise_01b_grassfire/fast
-
-#=============================================================================
-# Target rules for targets named exercise_01a_boundary
-
-# Build rule for target.
-exercise_01a_boundary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise_01a_boundary
-.PHONY : exercise_01a_boundary
-
-# fast build rule for target.
-exercise_01a_boundary/fast:
-	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/build
-.PHONY : exercise_01a_boundary/fast
-
-#=============================================================================
-# Target rules for targets named exercise_basic_watershed
-
-# Build rule for target.
-exercise_basic_watershed: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise_basic_watershed
-.PHONY : exercise_basic_watershed
-
-# fast build rule for target.
-exercise_basic_watershed/fast:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/build
-.PHONY : exercise_basic_watershed/fast
+exercise_01d_watershed/fast:
+	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/build
+.PHONY : exercise_01d_watershed/fast
 
 #=============================================================================
 # Target rules for targets named exercise_01c_wheel
@@ -163,17 +137,30 @@ exercise_01c_wheel/fast:
 .PHONY : exercise_01c_wheel/fast
 
 #=============================================================================
-# Target rules for targets named exercise_01d_watershed
+# Target rules for targets named exercise_01a_boundary
 
 # Build rule for target.
-exercise_01d_watershed: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exercise_01d_watershed
-.PHONY : exercise_01d_watershed
+exercise_01a_boundary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_01a_boundary
+.PHONY : exercise_01a_boundary
 
 # fast build rule for target.
-exercise_01d_watershed/fast:
-	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/build
-.PHONY : exercise_01d_watershed/fast
+exercise_01a_boundary/fast:
+	$(MAKE) -f CMakeFiles/exercise_01a_boundary.dir/build.make CMakeFiles/exercise_01a_boundary.dir/build
+.PHONY : exercise_01a_boundary/fast
+
+#=============================================================================
+# Target rules for targets named exercise_01b_grassfire
+
+# Build rule for target.
+exercise_01b_grassfire: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exercise_01b_grassfire
+.PHONY : exercise_01b_grassfire
+
+# fast build rule for target.
+exercise_01b_grassfire/fast:
+	$(MAKE) -f CMakeFiles/exercise_01b_grassfire.dir/build.make CMakeFiles/exercise_01b_grassfire.dir/build
+.PHONY : exercise_01b_grassfire/fast
 
 exercise_01a_boundary.o: exercise_01a_boundary.cpp.o
 
@@ -283,33 +270,6 @@ exercise_01d_watershed.cpp.s:
 	$(MAKE) -f CMakeFiles/exercise_01d_watershed.dir/build.make CMakeFiles/exercise_01d_watershed.dir/exercise_01d_watershed.cpp.s
 .PHONY : exercise_01d_watershed.cpp.s
 
-exercise_basic_watershed.o: exercise_basic_watershed.cpp.o
-
-.PHONY : exercise_basic_watershed.o
-
-# target to build an object file
-exercise_basic_watershed.cpp.o:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/exercise_basic_watershed.cpp.o
-.PHONY : exercise_basic_watershed.cpp.o
-
-exercise_basic_watershed.i: exercise_basic_watershed.cpp.i
-
-.PHONY : exercise_basic_watershed.i
-
-# target to preprocess a source file
-exercise_basic_watershed.cpp.i:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/exercise_basic_watershed.cpp.i
-.PHONY : exercise_basic_watershed.cpp.i
-
-exercise_basic_watershed.s: exercise_basic_watershed.cpp.s
-
-.PHONY : exercise_basic_watershed.s
-
-# target to generate assembly for a file
-exercise_basic_watershed.cpp.s:
-	$(MAKE) -f CMakeFiles/exercise_basic_watershed.dir/build.make CMakeFiles/exercise_basic_watershed.dir/exercise_basic_watershed.cpp.s
-.PHONY : exercise_basic_watershed.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -317,12 +277,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... exercise_01b_grassfire"
-	@echo "... exercise_01a_boundary"
-	@echo "... exercise_basic_watershed"
-	@echo "... exercise_01c_wheel"
-	@echo "... exercise_01d_watershed"
 	@echo "... edit_cache"
+	@echo "... exercise_01d_watershed"
+	@echo "... exercise_01c_wheel"
+	@echo "... exercise_01a_boundary"
+	@echo "... exercise_01b_grassfire"
 	@echo "... exercise_01a_boundary.o"
 	@echo "... exercise_01a_boundary.i"
 	@echo "... exercise_01a_boundary.s"
@@ -335,9 +294,6 @@ help:
 	@echo "... exercise_01d_watershed.o"
 	@echo "... exercise_01d_watershed.i"
 	@echo "... exercise_01d_watershed.s"
-	@echo "... exercise_basic_watershed.o"
-	@echo "... exercise_basic_watershed.i"
-	@echo "... exercise_basic_watershed.s"
 .PHONY : help
 
 

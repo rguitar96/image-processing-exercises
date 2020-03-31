@@ -19,9 +19,14 @@ int main(int argc, char** argv )
         return -1;
     }
 
+    if (value != 10)
+    {
+        std::cerr << "[WARNING]: Optimal results achieved with i = 10." << "\n";
+    }
+
     cv::Mat input_image;
 
-    input_image = cv::imread(argv[2]);//, cv::IMREAD_GRAYSCALE);
+    input_image = cv::imread(argv[2]);
 
     cv::Mat output_image = input_image.clone();
 
@@ -32,7 +37,7 @@ int main(int argc, char** argv )
     }
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(2*value+1, 2*value+1));
 
-    cv::Mat bw;// = input_image.clone();
+    cv::Mat bw;
     cv::cvtColor(input_image, bw, cv::COLOR_BGR2GRAY);
 
     cv::threshold(bw, bw, 0, 255, CV_THRESH_OTSU);
@@ -75,9 +80,11 @@ int main(int argc, char** argv )
 
     //markers.convertTo(markers, CV_8U, 255);
 
+/*
     printf("input channels: %d, markers channels: %d\n", input_image.channels(), markers.channels());
     printf("input depth: %d, markers depth: %d\n", input_image.depth(), markers.depth());
     printf("input type: %d, markers type: %d\n", input_image.type(), markers.type());
+*/
 
     cv::watershed(input_image, markers);
 
@@ -110,18 +117,17 @@ int main(int argc, char** argv )
         }
     }
 
-    printf("Number of channels: %d\n", dst.channels());
-
     cv::namedWindow("Output Image", cv::WINDOW_AUTOSIZE);
     cv::imshow("Output Image", dst);
 
     cv::waitKey(0);
 
-    printf("Type: %d\n", dist.type());
-    printf("Channels: %d\n", dist.channels());
-    printf("Depth: %d\n", dist.depth());
+/*
+    printf("Type: %d\n", dst.type());
+    printf("Channels: %d\n", dst.channels());
+    printf("Depth: %d\n", dst.depth());
+*/
 
-    dist.convertTo(dist, CV_8U, 255);
     cv::imwrite(argv[3], dst);
 
     return 0;
