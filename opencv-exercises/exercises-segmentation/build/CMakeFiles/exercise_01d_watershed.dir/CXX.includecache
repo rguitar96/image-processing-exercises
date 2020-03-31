@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/exercise_01d_watershed.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+

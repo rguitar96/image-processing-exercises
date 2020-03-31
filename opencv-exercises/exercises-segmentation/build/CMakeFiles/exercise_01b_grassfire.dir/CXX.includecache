@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/exercise_01b_grassfire.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+vector
+-
+cmath
+-
+

@@ -1,0 +1,7 @@
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/exercise_01b_grassfire.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/exercise_01a_boundary.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/exercise_basic_watershed.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/exercise_01c_wheel.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/exercise_01d_watershed.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-segmentation/build/CMakeFiles/edit_cache.dir
