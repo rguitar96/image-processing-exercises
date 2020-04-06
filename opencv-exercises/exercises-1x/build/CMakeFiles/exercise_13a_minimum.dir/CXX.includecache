@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/exercise_13a_minimum.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+fstream
+-
+

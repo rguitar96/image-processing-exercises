@@ -1,0 +1,5 @@
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/build/CMakeFiles/rebuild_cache.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/build/CMakeFiles/edit_cache.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/build/CMakeFiles/exercise_13b_maximum.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/build/CMakeFiles/exercise_11a_flatzone.dir
+/home/rodrigo/universidad/image-processing-exercises/opencv-exercises/exercises-1x/build/CMakeFiles/exercise_13a_minimum.dir
