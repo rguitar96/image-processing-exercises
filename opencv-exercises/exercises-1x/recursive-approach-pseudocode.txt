@@ -1,0 +1,35 @@
+BEGIN
+	input_image = imread(input_path)
+	output_image = zeros(input_image.size())
+
+	x = input_pixel_X		// Input pixel x value
+	y = input_pixel_Y		// Input pixel y value
+	con = input_connectivity	// Connectivity to use (4 or 8)
+	label = input_label		// Label for flatzone pixels
+
+	recursive_flatzone(input_image, output_image, x, y, input_image(x,y), label, con)	// call the recursion on the input pixel, with the value of that pixel
+
+	return output_image
+END
+
+
+def recursive_flatzone(input_image, output_image, x, y, value, label, con)
+BEGIN
+	if (x < 0 or x == input_image.rows or y < 0 or y < input_image.cols) return		// pixel out of borders, return
+
+	if (output_image(x,y) == label) return		// pixel already visited
+	if (input_image(x,y) != value) return		// if input_image(x,y) is not equal to the original value, we are out of the flatzone
+
+	output_image(x,y) = label			// unvisited pixel, add it to the output image and call all their neighbours recursively
+
+	recursive_flatzone(input_image, output_image, x-1, y, value, label, con)
+	recursive_flatzone(input_image, output_image, x+1, y, value, label, con)
+	recursive_flatzone(input_image, output_image, x, y-1, value, label, con)
+	recursive_flatzone(input_image, output_image, x, y+1, value, label, con)
+
+	if (con == CONNECT_8)		//visit also diagonal pixels
+		recursive_flatzone(input_image, output_image, x-1, y-1, value, label, con)
+		recursive_flatzone(input_image, output_image, x-1, y+1, value, label, con)
+		recursive_flatzone(input_image, output_image, x+1, y-1, value, label, con)
+		recursive_flatzone(input_image, output_image, x+1, y+1, value, label, con)
+END
